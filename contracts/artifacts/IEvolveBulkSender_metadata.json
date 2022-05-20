@@ -1,0 +1,136 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_payers",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address",
+						"name": "_ERCTokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "bulkReceive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_receivers",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address",
+						"name": "_ERC20Address",
+						"type": "address"
+					}
+				],
+				"name": "bulkWithdraw",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "factoryAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newFactoryAddress",
+						"type": "address"
+					}
+				],
+				"name": "updateFactoryAddress",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/IEvolveBulkSender.sol": "IEvolveBulkSender"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IEvolveBulkSender.sol": {
+			"keccak256": "0x7c568b0697301789d71caa391538f4bcf950a92f0881091c2203a85533298852",
+			"license": "MIT OR Apache-2.0",
+			"urls": [
+				"bzz-raw://12669ff160439834ef48ef39379a334d63049e62508626c50fe48a30f4bfed7c",
+				"dweb:/ipfs/QmSJ8w2LHKzFQG7YskNr1Qhs3jawbP3ko1wvCR7ee4VB2W"
+			]
+		}
+	},
+	"version": 1
+}

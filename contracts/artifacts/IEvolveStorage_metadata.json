@@ -1,0 +1,254 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_presetId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_teamA",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_teamB",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_priceRate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_createAt",
+						"type": "uint256"
+					}
+				],
+				"name": "addNewCompetion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "competitionId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_matchPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberOfTeamMemebr",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_createAt",
+						"type": "uint256"
+					}
+				],
+				"name": "addNewPreset",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_competionId",
+						"type": "uint256"
+					}
+				],
+				"name": "getCompetion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "presetPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "playerCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_teamA",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_teamB",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_competionStatus",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_competionWinner",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_priceRate",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_presetId",
+						"type": "uint256"
+					}
+				],
+				"name": "getPreset",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_competionId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "updateCompetionStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_competionId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_winnerTeam",
+						"type": "uint8"
+					}
+				],
+				"name": "updateCompetionWinner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_factory",
+						"type": "address"
+					}
+				],
+				"name": "updateFactoryAddress",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/IEvolveStorage.sol": "IEvolveStorage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IEvolveStorage.sol": {
+			"keccak256": "0xe2a3d8d23be633f46e7345a32927ca94440b079460f2cc88d0593d8ce4fbfed3",
+			"license": "MIT OR Apache-2.0",
+			"urls": [
+				"bzz-raw://ed48662d5f4cbe457af63f9757e52c66c5086ccf341172210d4d257fb6a26f46",
+				"dweb:/ipfs/QmSnsEamFWXR9SEAkZSjpBNH6zLFhXBTjiZG7nfTuTw6nE"
+			]
+		}
+	},
+	"version": 1
+}

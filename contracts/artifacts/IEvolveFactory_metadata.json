@@ -1,0 +1,290 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_presetId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_teamA",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_teamB",
+						"type": "address[]"
+					},
+					{
+						"internalType": "bool[]",
+						"name": "_boolNeedReplace",
+						"type": "bool[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_createAt",
+						"type": "uint256"
+					}
+				],
+				"name": "addNewCompetion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "competitionId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_competionId",
+						"type": "uint256"
+					}
+				],
+				"name": "cancelCompetion",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newFactory",
+						"type": "address"
+					}
+				],
+				"name": "destroyFactory",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_competionId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_winnerTeam",
+						"type": "uint8"
+					}
+				],
+				"name": "setCompetionWinner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IEvolveBulkSender",
+						"name": "_bulkSender",
+						"type": "address"
+					}
+				],
+				"name": "updateBulkSender",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newAdminAddress",
+						"type": "address"
+					}
+				],
+				"name": "updateFactoryAdmin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IEvolveStorage",
+						"name": "_storageAddress",
+						"type": "address"
+					}
+				],
+				"name": "updateStorage",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "_tokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "updateTokenAddress",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newRate",
+						"type": "uint256"
+					}
+				],
+				"name": "updateTokenRate",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/IEvolveFactory.sol": "IEvolveFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xe0c8b625a79bac0fe80f17cfb521e072805cc9cef1c96a5caf45b264e74812fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://12fd1efc9ad061ef675bd50fb0c8e3c6f2952a09f8df0e3c688b8d81b8918838",
+				"dweb:/ipfs/QmawN6PjTwy91pU7ANjCSgbsLc8TDA6hwu9GsFFaNSuhb5"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+			"keccak256": "0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd",
+				"dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"contracts/IEvolveBulkSender.sol": {
+			"keccak256": "0x7c568b0697301789d71caa391538f4bcf950a92f0881091c2203a85533298852",
+			"license": "MIT OR Apache-2.0",
+			"urls": [
+				"bzz-raw://12669ff160439834ef48ef39379a334d63049e62508626c50fe48a30f4bfed7c",
+				"dweb:/ipfs/QmSJ8w2LHKzFQG7YskNr1Qhs3jawbP3ko1wvCR7ee4VB2W"
+			]
+		},
+		"contracts/IEvolveFactory.sol": {
+			"keccak256": "0xaadf46c87ac424d88ad5852fcc07f0142141c66cae165a4176bef1f09354ad42",
+			"license": "MIT OR Apache-2.0",
+			"urls": [
+				"bzz-raw://c1345cb54c1a111ac94145f26474fa6627140e75f13c71be76f417068a74087a",
+				"dweb:/ipfs/QmPQHe5spJrYgkhQoHnLXtDP71Eg8FuPLoBtCB31U4pzn2"
+			]
+		},
+		"contracts/IEvolveStorage.sol": {
+			"keccak256": "0xe2a3d8d23be633f46e7345a32927ca94440b079460f2cc88d0593d8ce4fbfed3",
+			"license": "MIT OR Apache-2.0",
+			"urls": [
+				"bzz-raw://ed48662d5f4cbe457af63f9757e52c66c5086ccf341172210d4d257fb6a26f46",
+				"dweb:/ipfs/QmSnsEamFWXR9SEAkZSjpBNH6zLFhXBTjiZG7nfTuTw6nE"
+			]
+		}
+	},
+	"version": 1
+}
