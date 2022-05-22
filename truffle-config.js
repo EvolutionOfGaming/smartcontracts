@@ -15,6 +15,7 @@ module.exports = {
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true,
+      networkCheckTimeout: 20000,
     },
     bsc: {
       provider: () =>
@@ -23,6 +24,19 @@ module.exports = {
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true,
+    },
+    rinkeby: {
+      provider: function () {
+        return new HDWalletProvider(
+          mnemonic,
+          `https://rinkeby.infura.io/v3/${`3c522dd0717747d4bc751d5f12356643`}`
+        );
+      },
+      network_id: 4,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      networkCheckTimeout: 20000,
     },
     // ,
     // develop: {
@@ -57,7 +71,7 @@ module.exports = {
     testnet: Key,
     bsc: Key,
     bscscan: Key,
-    etherscan: Key
+    etherscan: "2NHXYFI1ESQYW14PCDWVCJZRJN2B9ETBST",
   },
   // Truffle DB is currently disabled by default; to enable it, change enabled:
   // false to enabled: true. The default storage location can also be

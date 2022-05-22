@@ -299,6 +299,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "startCompetitionId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startPresetId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -441,11 +467,11 @@
 			]
 		},
 		"contracts/EvolveStorage.sol": {
-			"keccak256": "0x3da2bb314e0ace97ba500b173c7e52fb9fccdcbc31093040c86afd7e9395faf5",
+			"keccak256": "0x2f82ffbceeea17095fb8897e3b43f1ac9b72edfd794d165c48779dd3d130078b",
 			"license": "MIT OR Apache-2.0",
 			"urls": [
-				"bzz-raw://af6db5fd96e60f80c4913e49188374233e4af8199c2eaa8a55f60b8f2e260b9e",
-				"dweb:/ipfs/QmXx4hadytPjt9iB31AfTC9PRYTQuyFKDca1qsQcaTDtVi"
+				"bzz-raw://28b1d9c171137e92973bc33f46f7cc712cf16e6234aec2543f8c0af698d4cc11",
+				"dweb:/ipfs/QmawU8Mghe3LGiNTSy2KP86QBvnQ8onDYTZLmTrDNjoX2C"
 			]
 		},
 		"contracts/IEvolveStorage.sol": {
