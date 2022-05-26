@@ -3,10 +3,7 @@
     "token": "0x1550007C4A314a920031787a02A5821ca7E84664"
   },
   "rinkeby": {
-    "token": "0x81Bd826D549c29Fc6A35afb18a016BfeA221c053",
-    "storage": "0xfd64Ee5956f34e413b102e9Db47E91e030c19a8e",
-    "bulkSender": "0xDd4AB9C95503053c4C06BEFD192CD2D06E809bf6",
-    "adminUpdater": "0x29cA5bdC812Cf9536535Ef2c4159A84b8D1BE13d"
+    "token": "0x81Bd826D549c29Fc6A35afb18a016BfeA221c053"
   },
   "mainnet": {
     "token": "0x33C91eb6d0CE1dd138f9E93bCE31Ac779dA4ee49"

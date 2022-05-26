@@ -9,6 +9,6 @@
     "compile": "rm -rf build && truffle compile",
     "migrate": "truffle migrate --compile-none --network testnet",
     "migrate:prod": "truffle migrate --compile-none --network bsc",
-    "verify": "truffle  run verify"
+    "verify": "truffle  run verify EvolveFactory EvolveStorage EvolveBulkSender EvolveAccessControll EvolveAdminUpdater --network testnet"
   }
 }
