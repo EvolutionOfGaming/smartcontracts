@@ -2,10 +2,13 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
     "@truffle/hdwallet-provider": "^2.0.8",
+    "truffle": "^5.5.15",
     "truffle-plugin-verify": "^0.5.25"
   },
   "scripts": {
-    "migrate": "rm -rf build && truffle migrate",
+    "compile": "rm -rf build && truffle compile",
+    "migrate": "truffle migrate --compile-none --network testnet",
+    "migrate:prod": "truffle migrate --compile-none --network bsc",
     "verify": "truffle  run verify"
   }
 }
