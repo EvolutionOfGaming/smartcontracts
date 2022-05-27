@@ -81,10 +81,10 @@ contract EvolveFactory is Context, Ownable, EvolveAccessControll, IEvolveFactory
         (uint matchPrice,uint playerNumber) = evolveStorage.getPreset(_presetId);
 
         require(_teamA.length == playerNumber, "team member need to be equal with preset team number!");
-        address[] memory allPlayerAddressList = concatenateArraysWithReplaceAddress(_teamA, _teamB,_boolNeedReplace,giftTokenProvider);
+        address[] memory allPlayerAddressList = concatenateArraysWithReplaceAddress(_teamA, _teamB, _boolNeedReplace, giftTokenProvider);
         
         uint256 competionPriceByToken = calculateMatchPrice(matchPrice, tokenPriceByUSD, 18);
-        bool isBulked =  evolveBulkSender.bulkReceive(competionPriceByToken, allPlayerAddressList, address(tokenAddress));
+        evolveBulkSender.bulkReceive(competionPriceByToken, allPlayerAddressList, address(tokenAddress));
         
         competitionId = evolveStorage.addNewCompetion(_presetId, _teamA, _teamB, tokenPriceByUSD, _createAt);
         return competitionId;
@@ -165,21 +165,15 @@ contract EvolveFactory is Context, Ownable, EvolveAccessControll, IEvolveFactory
         return returnArr;
     } 
 
-    function concatenateArraysWithReplaceAddress(address[] calldata _Accounts, address[] calldata _Accounts2 , bool[] calldata _replaceAddressList, address _replaceAddress) private pure returns(address[] memory) {
-        address[] memory returnArr = new address[](_Accounts.length + _Accounts2.length);
-
-        uint i=0;
-        for (; i < _Accounts.length; i++) {
-            bool _needReplace =  _replaceAddressList[i];
-            returnArr[i] = _needReplace ? _replaceAddress : _Accounts[i];
+    function concatenateArraysWithReplaceAddress(address[] memory _Accounts, address[] memory _Accounts2 , bool[] memory _replaceAddressList, address _replaceAddress) private returns(address[] memory) {
+        address[] memory returnArr = concatenateArrays(_Accounts,_Accounts2 );
+        uint k = 0;
+        for(;k < returnArr.length; k++){
+            bool _needReplace =  _replaceAddressList[k];
+            if(_needReplace == true){
+                returnArr[k] = _replaceAddress;
+            }
         }
-
-        uint j=0;
-        while (j < _Accounts2.length) {
-            bool _needReplace =  _replaceAddressList[i++];
-            returnArr[i++] =_needReplace ?  _replaceAddress :  _Accounts2[j++];
-        }
-
         return returnArr;
     }
 

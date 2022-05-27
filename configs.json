@@ -1,6 +1,9 @@
 {
   "testnet": {
-    "token": "0x1550007C4A314a920031787a02A5821ca7E84664"
+    "token": "0x1550007C4A314a920031787a02A5821ca7E84664",
+    "bulkSender": "0xb0609563d9A79d99682dAA7301d8F4B7363fB216",
+    "adminUpdater": "0x0b5bF4e3E7AFB9b729451cDD40901c96a87ca1c2",
+    "storage": "0x94B201f1da54E9d7754938a35c4658537F7E1278"
   },
   "rinkeby": {
     "token": "0x81Bd826D549c29Fc6A35afb18a016BfeA221c053"
